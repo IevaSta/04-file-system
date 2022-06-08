@@ -1,11 +1,7 @@
 import { file } from './lib/file.js'
-import { skaitomKarves } from './lib/karviuTurgus.js'
-
-const karves = await skaitomKarves();
-// console.log(karves);
 
 
-const readStatus = await file.read('users', 'petras.json');
+// const readStatus = await file.read('userssssss', 'petras.json');
 // console.log(readStatus);
 
 const userMaryte = {
@@ -14,5 +10,5 @@ const userMaryte = {
     isMarried: false,
 }
 
-const createStatus = await file.create('users', 'maryte.json', userMaryte);
-console.log('File status:', createStatus)
+const createStatus = await file.create('users', 'betkas.json', userMaryte);
+console.log(createStatus);
